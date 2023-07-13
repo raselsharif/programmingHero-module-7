@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .box {
+        display: flex;
+    }
+
+    .box1 {
+        width: 30%;
+        background: teal;
+        height: 100vh;
+    }
+
+    .box2 {
+        width: 70%;
+        background: khaki;
+        height: 100vh;
+    }
+
+    @media screen and (max-width: 576px) {
+        .box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box1 {
+            width: 1000%;
+            background: teal;
+            height: 30vh;
+        }
+
+        .box2 {
+            width: 100%;
+            background: khaki;
+            height: 70vh;
+        }
+    }
+</style>
+
+<body>
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+
+</html>
